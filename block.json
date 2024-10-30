@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "luway/upsale",
+	"version": "1.1.0",
+	"title": "Luway Upsale",
+	"description": "Custom block, which will contain products that were purchased with any products from the cart, or the most popular products.",
+	"category": "layout",
+	"icon": "cart",
+	"textdomain": "luway-upsale",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		},
+		"products": {
+			"type": "number",
+			"default": 5
+		},
+		"columns": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
